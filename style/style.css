@@ -1,0 +1,150 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* TOP HEADER SECTION WITH NAVIGATION */
+header {
+	width: 100%; 
+	height: 100px;
+	background-color: orange;		
+	margin-top: 0px;
+}
+
+.logo {
+	width: 40%;
+	height: 100px; 
+}
+
+.logo img {
+	width: 40%;
+	height: 120px;
+	text-align: center;
+	margin: 10px auto;
+	padding: 0px 10px;
+}
+
+nav {
+	width: 55%; 
+	height: 88px;
+	float: right;
+	margin-top: -80px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav li { 
+	display: inline-block;
+    text-align: right;
+    padding: 5px 10px 0 0;
+    vertical-align: center;
+    margin: 5px 5px 0 0;
+}
+
+/* MIDDLE SECTION WITH SEARCH BAR, PIC, 
+TEXT, AND BUTTONS */
+section {
+ 	width: 100%; 
+	height: 400px; 
+	display: inline-block;
+ }
+
+section input {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	height: 50px;
+	width: 20%;
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	color: #757575;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;	
+	z-index: -1;
+}
+
+/* ** Not sure if this is the best way to
+go about ensuring this search icon is in 
+the correct location. Unfortunately, it 
+doesn't seen to work when the screen size
+decreases past ~700px ** Thoughts?? */
+section i {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	color: #757575;
+	position: relative;
+    left: 175px;
+    top: 15px;
+   	z-index: 1;
+}
+
+.left {
+	width: 40%;
+	height: 250px;
+	margin: 40px 10px;
+	float: left; 
+}
+.left img {
+	width: 70%;
+	height: 200px;
+	margin: 20px;
+	padding: 20px;
+}
+
+.right { 
+	width: 50%;
+	height: 250px;
+	margin: 30px 10px;
+	float: right;
+	margin-right: 10px;
+	color: orange;	
+	font-family: 'Raleway', sans-serif;
+}
+
+.right h1 {
+	font-weight: lighter;
+}
+.right span {
+	color: rgb(50%, 90%, 90%);
+}
+.right button {
+	width: 38%;
+	height: 35px;
+	margin: 25px 15px 25px 0px;
+	color: white;
+	background-color: rgb(50%, 90%, 90%);
+	border: 1px solid rgb(50%, 90%, 90%);
+}
+
+button.one {
+	background-color: orange;
+	border: 1px solid orange;
+	border-radius: 5%;
+}
+button.two {
+	border-radius: 5%;
+}
+
+/* BOTTOM THIRD - JUST BACKGROUND */
+
+footer {
+    bottom: 0 !important;
+    position: absolute;
+    width: 100%;
+   	height: 100px;
+    background-color: rgb(50%, 90%, 90%);
+    border-top: 1px solid #e4e4e4;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 775px) {
+	#contact {
+		display: none;
+	}
+}
+@media (max-width: 600px) {
+	#blog {
+		display: none;
+	}
+}
