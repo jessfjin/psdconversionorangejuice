@@ -49,6 +49,17 @@ section {
 	display: inline-block;
  }
 
+/* * positioning of this Search icon
+is ensured through the media queries 
+a the end of this stylesheet * */
+section i {
+	float: right;
+	margin-top: 26px;
+	margin-right: -178px;
+	color: #757575;
+   	z-index: 1;
+} 
+
 section input {
 	float: right;
 	margin-top: 10px;
@@ -63,22 +74,6 @@ section input {
 	z-index: -1;
 }
 
-/* ** Not sure if this is the best way to
-go about ensuring this search icon is in 
-the correct location. Unfortunately, it 
-doesn't seen to work when the screen size
-decreases past ~700px ** Thoughts?? */
-section i {
-	float: right;
-	margin-top: 10px;
-	margin-right: 10px;
-	color: #757575;
-	position: relative;
-    left: 175px;
-    top: 15px;
-   	z-index: 1;
-}
-
 .left {
 	width: 40%;
 	height: 250px;
@@ -86,10 +81,10 @@ section i {
 	float: left; 
 }
 .left img {
-	width: 70%;
-	height: 200px;
-	margin: 20px;
-	padding: 20px;
+	width: 250px;
+    height: 240px;
+	margin: 0px 20px;
+	padding: 0px 20px;
 }
 
 .right { 
@@ -104,6 +99,7 @@ section i {
 
 .right h1 {
 	font-weight: lighter;
+	overflow: hidden;
 }
 .right span {
 	color: rgb(50%, 90%, 90%);
@@ -137,14 +133,71 @@ footer {
     border-top: 1px solid #e4e4e4;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES for the
+search icon in the searchbar
+and for the nav bar cut off */
+@media (min-width: 1000px) {
+	.fa {
+		margin-right: -200px;
+	}
+}
+@media (min-width: 950px) {
+	.fa {
+		margin-right: -185px;
+	}
+}
+@media (max-width: 900px) {
+	.fa {
+		margin-right: -170px;
+	}
+}
+@media (max-width: 850px) {
+	.fa {
+		margin-right: -160px;
+	}
+}
+@media (max-width: 800px) {
+	.fa {
+		margin-right: -150px;
+	}
+}
 @media (max-width: 775px) {
 	#contact {
 		display: none;
 	}
 }
+@media (max-width: 750px) {
+	.fa {
+		margin-right: -140px;
+	}
+}
+@media (max-width: 745px) {
+	.fa {
+		margin-right: -140px;
+	}
+}
+@media (max-width: 730px) {
+	.fa {
+		margin-right: -130px;
+	}
+}
+@media (max-width: 690px) {
+	.fa {
+		margin-right: -123px;
+	}
+}
+@media (max-width: 640px) {
+	.fa {
+		margin-right: -117px;
+	}
+}
 @media (max-width: 600px) {
 	#blog {
 		display: none;
+	}
+}
+@media (max-width: 580px) {
+	.fa {
+		margin-right: -100px;
 	}
 }
